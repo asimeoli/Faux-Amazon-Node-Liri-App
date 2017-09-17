@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/asimeoli/bamazon#readme",
   "dependencies": {
-    "inquirer": "^3.2.3"
-  }
+    "console.table": "^0.9.1",
+    "inquirer": "^3.2.3",
+    "mysql": "^2.14.1"
+  },
+  "devDependencies": {}
 }
