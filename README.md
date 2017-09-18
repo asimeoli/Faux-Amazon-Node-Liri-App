@@ -24,24 +24,24 @@
 * bamazon manager view opens to an inquire list to select a task. 
 
 #### View Products for Sale
->* Opens a view of the current catalog. 
+* Opens a view of the current catalog. 
 
 ![Image of man1](https://github.com/asimeoli/bamazon/blob/master/screen%20shots/man1.PNG)
 
 #### View Low Inventory
->* Displays all items with stock less than 5 in stock. 
+* Displays all items with stock less than 5 in stock. 
 
 ![Image of man2](https://github.com/asimeoli/bamazon/blob/master/screen%20shots/man2.PNG)
 
 #### Add to Inventory
->* Allows user to select from the products to add inventory. 
+* Allows user to select from the products to add inventory. 
 
 ![Image of man3](https://github.com/asimeoli/bamazon/blob/master/screen%20shots/man3.PNG)
 
 ![Image of man4](https://github.com/asimeoli/bamazon/blob/master/screen%20shots/man4.PNG)
 
 #### Add New Product
->* Add a new item to the shop database!
+* Add a new item to the shop database!
 
 ![Image of man5](https://github.com/asimeoli/bamazon/blob/master/screen%20shots/man5.PNG)
 
