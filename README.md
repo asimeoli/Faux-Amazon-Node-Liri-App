@@ -10,4 +10,4 @@
 1. bamazon customer view opens onto the current catalog of items for sale
 
 
-![cust1](https://github.com/asimeoli/bamazon/blob/master/screen%20shots/cust1.png)
+![Image of cust1](https://github.com/asimeoli/bamazon/blob/master/screen%20shots/cust1.PNG)
