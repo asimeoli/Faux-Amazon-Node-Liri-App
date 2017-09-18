@@ -39,7 +39,7 @@ function userInput(results) {
         },
         {
             type: "input",
-            message: "How many units for purchase?",
+            message: "How many units for purchase?\n",
             name: "productAmt",
             validate: function(value) {
                 if (isNaN(value) === false) {
@@ -50,7 +50,6 @@ function userInput(results) {
 
         }
     ]).then(function(answer) {
-        // console.log(answer.productId);
         var chosenItem;
         var chosenAmt = parseInt(answer.productAmt);
         for (var i = 0; i < results.length; i++) {
@@ -75,7 +74,9 @@ function userInput(results) {
                 }
             );
         } else {
-            console.log("There are not enough of " + chosenItem + "in stock to fill your order. Please try again.");
+            console.log("------------------------------------------------")
+            console.log("There are not enough of item number " + chosenItem.item_id + " in stock to fill your order. Please try again.\n");
+            console.log("------------------------------------------------")
             catalog();
         }
     });
@@ -84,7 +85,7 @@ function userInput(results) {
 function upNext() {
     inquirer.prompt([{
         type: "list",
-        message: "What would you like to do now?",
+        message: "What would you like to do now?\n",
         name: "toDo",
         choices: ["Shop-Again", "Exit"]
 
@@ -101,7 +102,7 @@ function upNext() {
     });
 
     function exit() {
-        console.log("Shopping Complete");
+        console.log("Shopping Complete\n");
         connection.end();
     }
 }

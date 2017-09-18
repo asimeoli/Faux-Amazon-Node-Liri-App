@@ -19,7 +19,7 @@ connection.connect(function(error) {
 function managerView() {
     inquirer.prompt([{
         type: "list",
-        message: "Please select a task:",
+        message: "Please select a task:\n",
         name: "managerTask",
         choices: ["View Products for Sale", "View Low Inventory", "Add to Inventory", "Add New Product", "Exit"]
     }]).then(function(answer) {
@@ -84,7 +84,7 @@ function addToInventory() {
         inquirer.prompt([{
             name: "productName",
             type: "list",
-            message: "Please select a product for inventory update",
+            message: "Please select a product for inventory update\n",
             choices: function() {
                 var choiceArray = [];
                 for (var i = 0; i < results.length; i++) {
@@ -96,7 +96,7 @@ function addToInventory() {
         }, {
             name: "amount",
             type: "input",
-            message: "What is the quantity you would like to add?",
+            message: "What is the quantity you would like to add?\n",
             validate: function(value) {
                 if (isNaN(value) === false) {
                     return true;
@@ -124,7 +124,7 @@ function addToInventory() {
                         if (error) throw error;
                         console.log("--------------------");
                         console.log("Stock added!");
-                        console.log("--------------------");
+                        console.log("--------------------\n");
                         printEntry(chosenItem.product_name);
                     })
             }
@@ -137,15 +137,15 @@ function addNewProduct() {
     inquirer.prompt([{
         name: "product_name",
         type: "input",
-        message: "What is the product you would like to add?"
+        message: "What is the product you would like to add?\n"
     }, {
         name: "department_name",
         type: "input",
-        message: "What is the department you would like to the product to?"
+        message: "What is the department you would like to the product to?\n"
     }, {
         name: "price",
         type: "input",
-        message: "What is price of the product?",
+        message: "What is price of the product?\n",
         validate: function(value) {
             if (isNaN(value) === false) {
                 return true;
@@ -155,7 +155,7 @@ function addNewProduct() {
     }, {
         name: "stock_quantity",
         type: "input",
-        message: "What is the quantity you would like to add?",
+        message: "What is the quantity you would like to add?\n",
         validate: function(value) {
             if (isNaN(value) === false) {
                 return true;
@@ -172,7 +172,7 @@ function addNewProduct() {
             },
             function(error) {
                 if (error) throw error;
-                console.log("Your new product was created successfully!");
+                console.log("Your new product was created successfully!\n");
                 managerView();
             });
     });
