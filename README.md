@@ -34,7 +34,7 @@
 ![Image of man2](https://github.com/asimeoli/bamazon/blob/master/screen%20shots/man2.PNG)
 
 #### Add to Inventory
-* Allows user to select from the products to add inventory. 
+* Allows the user to select from the products to add inventory. 
 
 ![Image of man3](https://github.com/asimeoli/bamazon/blob/master/screen%20shots/man3.PNG)
 
