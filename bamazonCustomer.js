@@ -16,10 +16,31 @@ connection.connect(function(error) {
     catalog();
 });
 
+// console.log("**                                                                                      ");
+// console.log("**                                                                                      ");
+// console.log("**                                                                                      ");
+// console.log("********    ********   ** **    ** **   ********   ***********   *********   ** *****   ");
+// console.log("**    ***          **  ***   **   ***          **          **   **       **  **      ** ");
+// console.log("**    ***   *********  **    **    **   *********        **     **       **  **      ** ");
+// console.log("**    ***  **      **  **    **    **  **      **      **       **       **  **      ** ");
+// console.log("********    *********  **    **    **   *********  ***********   *********   **      ** ");
+
+
+
+
 //First display all of the items for sale
 function catalog() {
     connection.query("SELECT * FROM products", function(error, results) {
         if (error) throw error;
+        console.log("**                                                                                      ");
+        console.log("**                                                                                      ");
+        console.log("**                                                                                      ");
+        console.log("********    ********   ** **    ** **   ********   ***********   *********   ** *****   ");
+        console.log("**    ***          **  ***   **   ***          **          **   **       **  **      ** ");
+        console.log("**    ***   *********  **    **    **   *********        **     **       **  **      ** ");
+        console.log("**    ***  **      **  **    **    **  **      **      **       **       **  **      ** ");
+        console.log("********    *********  **    **    **   *********  ***********   *********   **      **\n");
+        console.log("---------------------------------------------------------------------------------------\n")
         console.table(results);
         userInput(results);
     });
