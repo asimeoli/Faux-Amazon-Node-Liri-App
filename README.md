@@ -26,7 +26,7 @@
 #### View Products for Sale
 * Opens a view of the current catalog. 
 
-![Image of man1](https://github.com/asimeoli/bamazon/blob/master/screen%20shots/man1.PNG)
+![Image of man1](https://github.com/asimeoli/bamazon/blob/master/screen%20shots/man1.png)
 
 #### View Low Inventory
 * Displays all items with stock less than 5 in stock. 
